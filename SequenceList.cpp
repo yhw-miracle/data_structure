@@ -93,7 +93,7 @@ bool SequenceListDelete(SequenceList &sequenceList, int j, ElementType &e) {
 }
 
 /**
- * 打印顺序吧
+ * 打印顺序表
  */
 void PrintSequenceList(SequenceList sequenceList) {
     for(int i=0;i<sequenceList.length-1;i++) {
