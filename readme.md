@@ -11,4 +11,8 @@ recoding to learn data structure. --- 2018/08/05
 | ------ | ------ | ------ | ------ |
 | insert | O(n) | O(n) | O(1) | 
 | delete | O(n) | O(n) | O(1) |
-| LocateElment | O(n) | O(n) | O(1) | 
+| LocateElment | O(n) | O(n) | O(1) |
+
+```bash
+SequenceList. --- 2018/08/26
+```
