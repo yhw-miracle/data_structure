@@ -4,7 +4,7 @@
  * email: yhw_software@qq.com
  * date: 2018/08/26
  */
-#include"iostream"
+#include "iostream"
 
 using namespace std;
 
@@ -16,14 +16,14 @@ typedef int ElementType;
 typedef struct {
     ElementType data[MaxSize];
     int length;
-}SequenceList;
+} SequenceList;
 
 /**
  * 初始化顺序表
  */
 SequenceList InitSequenceList(SequenceList &sequenceList) {
-    sequenceList.length = 0;   //数据清空
-    for(int i=0;i<MaxSize;i++) {
+    sequenceList.length = 0; //数据清空
+    for (int i = 0; i < MaxSize; i++) {
         sequenceList.data[i] = 0;
     }
     return sequenceList;
@@ -32,17 +32,17 @@ SequenceList InitSequenceList(SequenceList &sequenceList) {
 /**
  * 求表长
  */
- int LengthSequenceList(SequenceList sequenceList) {
-     return sequenceList.length;
- }
+int LengthSequenceList(SequenceList sequenceList) {
+    return sequenceList.length;
+}
 
- /**
-  * 按值查找
-  * 有，返回位置；没有，返回没有
-  */
+/**
+ * 按值查找
+ * 有，返回位置；没有，返回没有
+ */
 int LocateElement(SequenceList sequenceList, ElementType e) {
-    for(int i=0;i<MaxSize;i++) {
-        if(sequenceList.data[i] == e) {
+    for (int i = 0; i < MaxSize; i++) {
+        if (sequenceList.data[i] == e) {
             return i;
         }
     }
@@ -53,8 +53,8 @@ int LocateElement(SequenceList sequenceList, ElementType e) {
  * 按位查找
  */
 ElementType GetElement(SequenceList sequenceList, int i) {
-    if(i<0 || i>=sequenceList.length) {
-        return -1;   //代表位置序号无效，无此值
+    if (i < 0 || i >= sequenceList.length) {
+        return -1; //代表位置序号无效，无此值
     }
     return sequenceList.data[i];
 }
@@ -63,17 +63,17 @@ ElementType GetElement(SequenceList sequenceList, int i) {
  * 插入操作
  */
 bool SequenceListInsert(SequenceList &sequenceList, ElementType e, int j) {
-    if(j<0 || j>sequenceList.length+1) {
+    if (j < 0 || j > sequenceList.length + 1) {
         return false;
     }
-    if(sequenceList.length>=MaxSize) {
+    if (sequenceList.length >= MaxSize) {
         return false;
     }
-    for(int i=sequenceList.length-1;i>=j;i--) {
-        sequenceList.data[i+1] = sequenceList.data[i];
+    for (int i = sequenceList.length - 1; i >= j; i--) {
+        sequenceList.data[i + 1] = sequenceList.data[i];
     }
     sequenceList.data[j] = e;
-    sequenceList.length ++;
+    sequenceList.length++;
     return true;
 }
 
@@ -81,14 +81,14 @@ bool SequenceListInsert(SequenceList &sequenceList, ElementType e, int j) {
  * 删除操作
  */
 bool SequenceListDelete(SequenceList &sequenceList, int j, ElementType &e) {
-    if(j<0 || j>sequenceList.length) {
+    if (j < 0 || j > sequenceList.length) {
         return false;
     }
     e = sequenceList.data[j];
-    for(int i=j+1;i<sequenceList.length;i++) {
-        sequenceList.data[i-1] = sequenceList.data[i];
+    for (int i = j + 1; i < sequenceList.length; i++) {
+        sequenceList.data[i - 1] = sequenceList.data[i];
     }
-    sequenceList.length --;
+    sequenceList.length--;
     return true;
 }
 
@@ -96,17 +96,17 @@ bool SequenceListDelete(SequenceList &sequenceList, int j, ElementType &e) {
  * 打印顺序表
  */
 void PrintSequenceList(SequenceList sequenceList) {
-    for(int i=0;i<sequenceList.length-1;i++) {
-        cout<<sequenceList.data[i]<<",";
+    for (int i = 0; i < sequenceList.length - 1; i++) {
+        cout << sequenceList.data[i] << ",";
     }
-    cout<<sequenceList.data[sequenceList.length-1]<<"."<<endl;
+    cout << sequenceList.data[sequenceList.length - 1] << "." << endl;
 }
 
 /**
  * 判断顺序表是否为空
  */
-bool EmptySequenceList(SequenceList sequenceList) {
-    if(sequenceList.length == 0) {
+    bool EmptySequenceList(SequenceList sequenceList) {
+    if (sequenceList.length == 0) {
         return true;
     }
     return false;
@@ -117,7 +117,7 @@ bool EmptySequenceList(SequenceList sequenceList) {
  */
 void DestorySequenceList(SequenceList &sequenceList) {
     sequenceList.length = 0;
-    //free(sequenceList);
+    // free(sequenceList);
 }
 
 /*
@@ -126,13 +126,13 @@ void DestorySequenceList(SequenceList &sequenceList) {
 int main() {
     SequenceList sequenceList;
     InitSequenceList(sequenceList);
-    for(int i=0;i<10;i++) {
+    for (int i = 0; i < 10; i++) {
         SequenceListInsert(sequenceList, i, i);
     }
     PrintSequenceList(sequenceList);
-    cout<<sequenceList.length<<endl;
+    cout << sequenceList.length << endl;
     int k;
-    cout<<SequenceListDelete(sequenceList, 2, k)<<endl;
-    cout<<k<<endl;
+    cout << SequenceListDelete(sequenceList, 2, k) << endl;
+    cout << k << endl;
     PrintSequenceList(sequenceList);
 }
