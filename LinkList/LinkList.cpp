@@ -56,14 +56,14 @@ LinkList CreateLinkListFromTail(LinkList &L) {
 /**
  * 按序号查找表结点
  */
-LinkNode *GetElement(LinkList &L, int i) {
+LinkNode *GetElement(LinkList L, int i) {
 	if(i < 0) {
 		return NULL;
 	}
 	if(i == 0) {
 		return L;
 	}
-	LinkList *p = L->next;
+	LinkNode *p = L->next;
 	int j = 1;
 	while(p && j <= i) {
 		p = p->next;
@@ -75,7 +75,7 @@ LinkNode *GetElement(LinkList &L, int i) {
 /**
  * 按值查找表结点
  */
-LinkNode *LocateElement(LinkList &L, ElementType x) {
+LinkNode *LocateElement(LinkList L, ElementType x) {
 	LinkNode *p = L->next;
 	while(p && p->data != x) {
 		p = p->next;
@@ -88,7 +88,7 @@ LinkNode *LocateElement(LinkList &L, ElementType x) {
  */
 bool InsertLinkNode(LinkList &L, ElementType x, int i) {
 	LinkNode *p;
-	LinkList *s;
+	LinkNode *s;
 	p = GetElement(L, i-1);
 	if(p != NULL) {
 		s = (LinkList)malloc(sizeof(LinkNode));
