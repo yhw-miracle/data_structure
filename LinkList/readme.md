@@ -1,6 +1,4 @@
-```bash
 具体程序见 [LinkList.cpp](LinkList.cpp)
-```
 
 1. 头结点和头指针的区别：不管带不带头结点，头指针始终指向链表的**第一个结点**，而头结点是带头结点链表中的第一个结点，结点内不存储信息。
 
@@ -23,5 +21,19 @@ s->next = p->next;
 p-next = s;
 ```
 
-8. 
-8. 
+8. 前插操作，将待插入结点 *s 插入到 *p 结点之前，可以将 *s 插入到 *p 之后，再交换 s->data 与 p->data 即可。
+```c++
+s->next = p->next;
+p->next = s;
+temp = s->data;
+s->data = p->data;
+p->data = temp;
+```
+
+9. 删除结点操作，直接将待删除结点的前驱结点的 next 域指向其后继结点，然后再释放待删除结点的存储空间。
+```c++
+p = GetElement(L, i-1);
+q = p->next;
+p->next = q->next;
+free(q);
+```

@@ -105,11 +105,12 @@ bool InsertLinkNode(LinkList &L, ElementType x, int i) {
  * 删除结点
  */
 bool DeleteLinkLode(LinkList &L, int i) {
-	LinkNode *p;
+	LinkNode *p, *q;
 	p = GetElement(L, i-1);
 	if(p != NULL) {
-		p->next = p->next->next;
-		free(p);
+		q = p->next;
+		p->next = q->next;
+		free(q);
 		return true;
 	} else {
 		return false;
