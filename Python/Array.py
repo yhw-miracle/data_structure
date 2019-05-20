@@ -74,8 +74,8 @@ class Array(object):
 
     def get_length(self):
         """
-        返回数组的长度：O(1)
-        时间复杂度为：
+        返回数组的长度
+        时间复杂度为：O(1)
         :return:
         """
         return self.length
