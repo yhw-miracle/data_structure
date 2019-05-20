@@ -17,7 +17,10 @@ class Array(object):
 
     def insert(self, x, index = 0):
         """
-        给数组指定位置插入数据
+        给数组指定位置插入数据，时间主要耗在查询上
+        时间复杂度为:
+         最好，最坏，平均，
+         O(1),O(n),O(n)
         :param index: 待插入位置
         :param x: 待插入的数据
         :return:
@@ -30,7 +33,10 @@ class Array(object):
 
     def modify(self, x, index):
         """
-        修改数组指定位置的数据
+        修改数组指定位置的数据,时间主要耗在查询上
+        时间复杂度为:
+         最好，最坏，平均，
+         O(1),O(n),O(n)
         :param index: 待修改的位置
         :param x: 待修改的新值
         :return:
@@ -43,7 +49,10 @@ class Array(object):
 
     def delete(self, index):
         """
-        删除数组指定位置的元素
+        删除数组指定位置的元素,时间主要耗在查询上
+        时间复杂度为:
+         最好，最坏，平均，
+         O(1),O(n),O(n)
         :param index:
         :return:
         """
@@ -56,6 +65,7 @@ class Array(object):
     def print_array(self):
         """
         打印数组元素
+        时间复杂度为：O(n)
         :return:
         """
         for i in self.data:
@@ -64,7 +74,8 @@ class Array(object):
 
     def get_length(self):
         """
-        返回数组的长度
+        返回数组的长度：O(1)
+        时间复杂度为：
         :return:
         """
         return self.length
