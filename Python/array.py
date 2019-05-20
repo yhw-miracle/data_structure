@@ -22,7 +22,7 @@ class Array(object):
         :param x: 待插入的数据
         :return:
         """
-        if index < 0 or index >= self.length:
+        if index < 0:
             return "插入失败"
         else:
             self.data.insert(index, x)
@@ -35,7 +35,7 @@ class Array(object):
         :param x: 待修改的新值
         :return:
         """
-        if index < 0 or index >= self.length:
+        if index < 0:
             return "下标 %d 错误" % index
         else:
             self.data.pop(index)
@@ -47,7 +47,7 @@ class Array(object):
         :param index:
         :return:
         """
-        if index < 0 or index >= self.length:
+        if index < 0:
             return "下标 %d 错误" % index
         else:
             self.data.pop(index)
@@ -59,7 +59,8 @@ class Array(object):
         :return:
         """
         for i in self.data:
-            print(i,",")
+            print(i, end = ",")
+        print()
 
 
 if __name__ == '__main__':
