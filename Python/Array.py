@@ -81,6 +81,7 @@ class Array(object):
         return self.length
 
 
+# 测试部分
 if __name__ == '__main__':
     array = Array()
     array.insert(1)
