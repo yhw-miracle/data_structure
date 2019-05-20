@@ -62,6 +62,13 @@ class Array(object):
             print(i, end = ",")
         print()
 
+    def get_length(self):
+        """
+        返回数组的长度
+        :return:
+        """
+        return self.length
+
 
 if __name__ == '__main__':
     array = Array()
@@ -78,4 +85,4 @@ if __name__ == '__main__':
     array.delete(0)
     array.print_array()
 
-    print(array.length)
+    print(array.get_length())
