@@ -2,7 +2,7 @@
 # @Time: 2019/5/20 19:42
 # @Author: yhw-miracle
 # @Email: yhw_software@qq.com
-# @File: LinkedList.py
+# @File: Simple_LinkedList.py
 # @Software: PyCharm
 
 
