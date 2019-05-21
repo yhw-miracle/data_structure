@@ -10,4 +10,4 @@ import datetime
 
 if __name__ == '__main__':
     with open("../../everyday_task/" + str(datetime.date.today()) + ".md", "w") as file:
-        file.write("Today is good.")
+        file.write("> Today is good.\n\n")
