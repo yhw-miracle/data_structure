@@ -47,4 +47,3 @@ class LoopLinkedList(object):
         :return:
         """
         pass
-
