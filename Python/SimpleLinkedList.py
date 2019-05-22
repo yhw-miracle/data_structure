@@ -53,3 +53,6 @@ class SimpleLinkedList(object):
         :return:
         """
         pass
+
+if __name__ == '__main__':
+    pass
