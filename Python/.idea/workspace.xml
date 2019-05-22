@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051022a7-1d87-4364-bc4c-35b953295cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LoopLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DoubleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/DoubleLinkedList.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Loop_LinkedList.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SimpleLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/SimpleLinkedList.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LoopLinkedList.py" beforeDir="false" afterPath="$PROJECT_DIR$/LoopLinkedList.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,8 +42,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DoubleLinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+            <state relative-caret-position="479">
+              <caret line="48" column="12" lean-forward="true" selection-start-line="8" selection-end-line="48" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -54,8 +51,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/LoopLinkedList.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="6" selection-start-line="6" selection-end-line="6" />
+            <state relative-caret-position="260">
+              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -241,7 +238,7 @@
       <workItem from="1558348544965" duration="5697000" />
       <workItem from="1558415665717" duration="3800000" />
       <workItem from="1558511151328" duration="2629000" />
-      <workItem from="1558519647390" duration="802000" />
+      <workItem from="1558519647390" duration="901000" />
     </task>
     <task id="LOCAL-00001" summary="insert(),modify(),delete(),print_array()">
       <created>1558351645169</created>
@@ -310,7 +307,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13014000" />
+    <option name="totallyTimeSpent" value="13113000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -426,15 +423,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/DoubleLinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="10" selection-end-column="8" />
+        <state relative-caret-position="479">
+          <caret line="48" column="12" lean-forward="true" selection-start-line="8" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/LoopLinkedList.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        <state relative-caret-position="260">
+          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
         </state>
       </provider>
     </entry>
