@@ -7,6 +7,9 @@
 
 
 class SimpleLinkedList(object):
+    """
+    单链表
+    """
     def __init__(self, data, next_data = None):
         """
         初始化链表
