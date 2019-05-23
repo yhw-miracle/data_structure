@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="051022a7-1d87-4364-bc4c-35b953295cdf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/linkedlist/LRU缓存淘汰算法.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/linkedlist/demo_判断字符串是否为回文字符串.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +21,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linkedlist/LRU缓存淘汰算法.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="338">
               <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/linkedlist/demo_判断字符串是否为回文字符串.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="208">
+              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
             </state>
           </provider>
         </entry>
@@ -111,6 +119,7 @@
         <option value="$PROJECT_DIR$/LoopLinkedList.py" />
         <option value="$PROJECT_DIR$/DoubleLoopLinkedList.py" />
         <option value="$PROJECT_DIR$/linkedlist/LRU缓存淘汰算法.py" />
+        <option value="$PROJECT_DIR$/linkedlist/demo_判断字符串是否为回文字符串.py" />
       </list>
     </option>
   </component>
@@ -266,7 +275,7 @@
       <workItem from="1558415665717" duration="3800000" />
       <workItem from="1558511151328" duration="2629000" />
       <workItem from="1558519647390" duration="2009000" />
-      <workItem from="1558611265875" duration="889000" />
+      <workItem from="1558611265875" duration="1024000" />
     </task>
     <task id="LOCAL-00001" summary="insert(),modify(),delete(),print_array()">
       <created>1558351645169</created>
@@ -366,11 +375,18 @@
       <option name="project" value="LOCAL" />
       <updated>1558615311021</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="新建 LRU缓存淘汰算法.py">
+      <created>1558615485401</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1558615485401</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15110000" />
+    <option name="totallyTimeSpent" value="15245000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -456,12 +472,13 @@
     <MESSAGE value="fix Python/LoopLinkedList.py&#10;fix Python/DoubleLoopLinkedList.py" />
     <MESSAGE value="新增 array 目录" />
     <MESSAGE value="新增 linkedlist 目录" />
-    <option name="LAST_COMMIT_MESSAGE" value="新增 linkedlist 目录" />
+    <MESSAGE value="新建 LRU缓存淘汰算法.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="新建 LRU缓存淘汰算法.py" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Python$demo.coverage" NAME="demo Coverage Results" MODIFIED="1558354684530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Python$array.coverage" NAME="array Coverage Results" MODIFIED="1558352185036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Python$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1558519690548" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
+    <SUITE FILE_PATH="coverage/Python$demo__1_.coverage" NAME="demo (1) Coverage Results" MODIFIED="1558615639582" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/utils" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/demo.py" />
@@ -511,6 +528,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linkedlist/demo_判断字符串是否为回文字符串.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
