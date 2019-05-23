@@ -7,24 +7,29 @@
 
 typedef int ElementType;
 
-typedef struct DoubleLinkNode {
+typedef struct DoubleLinkNode
+{
 	ElementType data;
 	struct DoubleLinkNode *prior, *next;
-}DoubleLinkNode, *DoubleLinkList;
+} DoubleLinkNode, *DoubleLinkList;
 
 /**
  * 按序号查找结点
  */
-DoubleLinkNode *GetElement(DoubleLinkList DL, int i) {
-	if(i<0) {
+DoubleLinkNode *GetElement(DoubleLinkList DL, int i)
+{
+	if (i < 0)
+	{
 		return NULL;
 	}
-	if(i == 0) {
+	if (i == 0)
+	{
 		return DL;
 	}
 	DoubleLinkNode *p = DL->next;
 	int j = 1;
-	while(p && j<i) {
+	while (p && j < i)
+	{
 		p = p->next;
 		j++;
 	}
@@ -34,17 +39,21 @@ DoubleLinkNode *GetElement(DoubleLinkList DL, int i) {
 /**
  * 插入结点操作
  */
-bool InsertLinkNode(DoubleLinkList &DL, int i) {
+bool InsertLinkNode(DoubleLinkList &DL, int i)
+{
 	DoubleLinkNode *p, *s;
-	p = GetElement(DL, i-1);
-	if(p != NULL) {
+	p = GetElement(DL, i - 1);
+	if (p != NULL)
+	{
 		s = (DoubleLinkList)malloc(sizeof(DoubleLinkNode));
 		s->next = p->next;
 		p->next->prior = s;
 		s->prior = p;
 		p->next = s;
 		return true;
-	} else {
+	}
+	else
+	{
 		return false;
 	}
 }
@@ -52,16 +61,20 @@ bool InsertLinkNode(DoubleLinkList &DL, int i) {
 /**
  * 删除结点操作
  */
-bool DeleteLinkNode(DoubleLinkList &DL, int i) {
+bool DeleteLinkNode(DoubleLinkList &DL, int i)
+{
 	DoubleLinkNode *p, *q;
-	p = GetElement(DL, i-1);
-	if(p != NULL) {
+	p = GetElement(DL, i - 1);
+	if (p != NULL)
+	{
 		q = p->next;
 		p->next = q->next;
 		q->next->prior = p;
 		free(q);
 		return true;
-	} else {
+	}
+	else
+	{
 		return false;
 	}
 }
