@@ -34,4 +34,5 @@ def get_random_data_list(length):
 
 
 if __name__ == '__main__':
-    data_list = []
+    data_list = get_random_data_list(30)
+    print(data_list)
