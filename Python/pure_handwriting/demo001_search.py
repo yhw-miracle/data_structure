@@ -20,11 +20,17 @@ def binary_search():
     :return:
     """
 
-def get_random_data_list():
+
+def get_random_data_list(length):
     """
     随机测试数据
-    :return:
+    :param length: 测试数据长度
+    :return: 测试数据列表
     """
+    data_list = []
+    for _ in range(length):
+        data_list.append(random.randint(1, 100))
+    return data_list
 
 
 if __name__ == '__main__':
